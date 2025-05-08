@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f3f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4C6EF5; /* Soft Blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #3c5cff; /* Deep Blue accent */
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Form */
+form.edit-user-form {
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+form.edit-user-form:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Label */
+form label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Input Fields */
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #4C6EF5;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Button */
+form button {
+    background-color: #4C6EF5;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #3c5cff;
+    transform: scale(1.05);
+}
+
+form button:active {
+    background-color: #2c49d7;
+}
+
+/* Cancel Button */
+a.cancel-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #4C6EF5;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+a.cancel-btn:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    form.edit-user-form {
+        padding: 20px;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+}

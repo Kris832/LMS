@@ -1,0 +1,110 @@
+/* Set the background image for the entire page */
+body {
+    background-image: url('../images/register.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for the form with flex alignment */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container with blur and transparent effect */
+.container form {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(12px); /* Background blur effect */
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Fade in animation for form */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading styling */
+.container h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Label styling for inputs */
+.container form label {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Input field styling */
+.container form input {
+    width: 100%;
+    padding: 12px 18px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Focus effect for inputs */
+.container form input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+/* Button styling */
+.container form button {
+    background: linear-gradient(135deg, #007bff, #00bcd4);
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.container form button:hover {
+    background: linear-gradient(135deg, #00bcd4, #007bff);
+    transform: translateY(-2px);
+}
+
+/* Styling for login link */
+p {
+    margin-top: 12px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

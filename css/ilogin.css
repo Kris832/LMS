@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/r1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-attachment: fixed;
+    filter: brightness(0.7); /* Optional: dims the background image */
+}
+
+/* Login Container (Glass Effect) */
+.login-container {
+    background: rgba(0, 0, 0, 0.6); /* Glass effect with transparency */
+    padding: 40px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px); /* Glass effect (blurred background) */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Login Title */
+.login-container h2 {
+    margin-bottom: 30px;
+    color: #fff; /* White text for contrast */
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Form Inputs */
+.login-container input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.7); /* Slight transparency */
+    transition: border-color 0.3s ease-in-out;
+}
+
+.login-container input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Login Button */
+.login-container button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Error Message */
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Register Link */
+.login-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd; /* Slightly lighter text */
+}
+
+.login-container a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effect */
+.login-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 25px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    .login-container input, .login-container button {
+        font-size: 14px;
+    }
+}

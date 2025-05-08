@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.payment-container {
+    background: #ffffff;
+    padding: 25px 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    text-align: left;
+}
+
+.payment-container h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #333333;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Form Labels */
+.payment-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555555;
+    font-weight: 500;
+}
+
+/* Input Fields */
+.payment-container input[type="text"],
+.payment-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+/* Grouping for Dropdowns */
+.select-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Adjust Dropdowns in Select Container */
+.select-container select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+/* Button Styles */
+.payment-container button {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .payment-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .payment-container h1 {
+        font-size: 22px;
+    }
+
+    .payment-container button {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+}

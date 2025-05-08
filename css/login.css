@@ -1,0 +1,116 @@
+/* Set the background image for the entire page */
+body {
+    background-image: url('../images/login.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for the form with flex alignment */
+.user-auth-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Refreshed form container with subtle blur and modern aesthetics */
+.form-container {
+    background: rgba(255, 255, 255, 0.85); /* Lighter, more transparent background */
+    backdrop-filter: blur(12px); /* Increased blur for a more subtle effect */
+    padding: 30px 40px; /* Adjusted padding (top/bottom 30px, left/right 40px) */
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade in animation for the form */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Heading style with a modern font */
+.form-container h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Form group with updated spacing and styling */
+.form-group {
+    margin-bottom: 18px;
+    text-align: left; /* Keep the labels aligned left */
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Input fields with soft border radius and subtle hover effect */
+.form-group input {
+    width: 100%;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    text-align: left; /* Keep the text aligned left */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+/* Button with gradient background and hover effect */
+.btn {
+    background: linear-gradient(135deg, #007bff, #00bcd4); /* Gradient background */
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #00bcd4, #007bff); /* Reverse gradient on hover */
+    transform: translateY(-2px);
+}
+
+/* Link style with hover underline effect */
+p {
+    margin-top: 12px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional small text styling (optional) */
+p small {
+    color: #888;
+}

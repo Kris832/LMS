@@ -1,0 +1,143 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/r2.jpg');
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.issued-books-section {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.773); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #219150;
+    padding: 12px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    margin: auto;
+    gap: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover & Focus Effect for Search Bar */
+.search-container:hover,
+.search-container:focus-within {
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Search Input */
+.search-input {
+    width: 280px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    caret-color: #27ae60;
+    transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Glowing Effect on Focus */
+.search-input:focus {
+    box-shadow: 0px 0px 12px rgba(39, 174, 96, 0.8);
+}
+
+/* Filter Button */
+.filter-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    padding: 10px 12px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effect for Filter Button */
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.5);
+}
+
+.filter-icon {
+    width: 14px;
+    height: 14px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+}

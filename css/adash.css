@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('../images/i_login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header */
+.dashboard-header {
+    background-color: rgba(0, 0, 0, 0.773); 
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.dashboard-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.dashboard-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.dashboard-header nav ul li {
+    display: inline;
+}
+
+.dashboard-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-header nav ul li a:hover {
+    background-color: #00796b;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Section */
+.dashboard-main {
+    flex: 1;
+    padding: 30px 20px;
+}
+
+.dashboard-section {
+    background-color: rgba(0, 0, 0, 0.773); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.dashboard-section h2 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.dashboard-section p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Stats Cards */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
