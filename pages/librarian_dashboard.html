@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian Dashboard</title>
+    <link rel="stylesheet" href="../css/librarian_dashboard.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Welcome, Librarian!</h1>
+        <nav>
+            <ul>
+                <li><a href="../pages/lview_issued_books.php">Manage Books</a></li>
+                <li><a href="../pages/manage_users.php">Manage Users</a></li>
+                <li><a href="../logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-section">
+            <h2>Quick Actions</h2>
+            <div class="actions">
+                <a href="add_books.html" class="action-button">Add New Book</a>
+                <a href="../pages/lview_issued_books.php" class="action-button">View Issued Books</a>
+                <a href="../pages/view_users.php" class="action-button">View Registered Users</a>
+                <a href="../pages/imanage_book.php" class="action-button">Manage Books</a>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>Library Stats</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>Total Books</h3>
+                    <p>1200</p>
+                </div>
+                <div class="stat">
+                    <h3>Issued Books</h3>
+                    <p>350</p>
+                </div>
+                <div class="stat">
+                    <h3>Registered Users</h3>
+                    <p>200</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
